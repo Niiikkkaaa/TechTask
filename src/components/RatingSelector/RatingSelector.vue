@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex w-fit mx-auto">
     <svg
       class="icon"
       width="28"

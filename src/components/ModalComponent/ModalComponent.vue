@@ -5,7 +5,7 @@
         <img src="../../assets/images/svg/CloseIcon.svg " alt="Close Icon" />
       </button>
       <div v-if="!isRewiewSend">
-        <h2 class="header">{{ $t("leaveAReview") }}</h2>
+        <h2 class="header text-3xl font-medium">{{ $t("leaveAReview") }}</h2>
         <textarea class="textarea" v-model="reviewValue" />
         <RatingSelector
           class="rating-selector"
@@ -21,7 +21,9 @@
       </div>
       <div class="modal-container-inner" v-else>
         <div class="content-container">
-          <h2 class="header">{{ $t("thankForReview") }}</h2>
+          <h2 class="header text-3xl font-medium">
+            {{ $t("thankForReview") }}
+          </h2>
           <button class="button button-primary" @click="closeModal">
             {{ $t("close") }}
           </button>
@@ -114,6 +116,7 @@
     position: fixed;
     width: 328px;
     height: 300px;
+    padding: 30px;
     right: calc(50% - 164px);
     top: calc(50% - 150px);
   }
