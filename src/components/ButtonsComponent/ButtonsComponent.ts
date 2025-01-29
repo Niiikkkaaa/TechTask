@@ -21,7 +21,6 @@ export default defineComponent({
 
     const openReviewsList = () => {
       reviewsStore.openReviewsList();
-      console.log(reviewsStore.isReviewsListOpen);
     };
 
     const openModal = () => {
