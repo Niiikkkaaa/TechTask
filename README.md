@@ -1,7 +1,6 @@
-<<<<<<< HEAD
+
 # TechTask
-=======
-# tech-task
+
 
 ## Project setup
 ```
@@ -22,7 +21,10 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
->>>>>>> 11145c9 (init)
+MockAPI was used as the API service, which allows for the quick generation of fake data for testing, development, and demonstration purposes.  
+Was created an endpoint: https://6797be91c2c861de0c6dd89c.mockapi.io/api/reviews/reviews which returns an array of objects. Each object has the following structure:
+{
+  review: string,
+  rating: number,
+  id: string,
+}
