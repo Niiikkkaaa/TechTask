@@ -1,5 +1,8 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import store from "./store";
+import { createPinia } from "pinia";
+import i18n from "./plugins/i18n";
 
-createApp(App).use(store).mount("#app");
+const pinia = createPinia();
+
+createApp(App).use(pinia).use(i18n).mount("#app");
